@@ -1,0 +1,9 @@
+[submodule "hua_wei/HarmonyOS"]
+	path = hua_wei/HarmonyOS
+	url = https://github.com/LIMAPP120/HarmonyOS.git
+[submodule "hua_wei/cangjie-programming-language-tutorial"]
+	path = hua_wei/cangjie-programming-language-tutorial
+	url = https://github.com/LIMAPP120/cangjie-programming-language-tutorial.git
+[submodule "hua_wei/harmonyos-tutorial"]
+	path = hua_wei/harmonyos-tutorial
+	url = https://github.com/LIMAPP120/harmonyos-tutorial.git
