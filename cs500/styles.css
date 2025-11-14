@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 400px;
+  background: #202124;
+  color: #e8e8e8;
+  font-size: 14px;
+
+  border: 2px solid orange;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border: 2px solid green;
+}
+
+.header.left-links {
+}
+
+.header.right-links {
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+img.googlesearch {
+  width: 272px;
+  height: 92px;
+  margin-top: 25px;
+}
+
+img.googleapps {
+  width: 24px;
+  height: 24px;
+  border: none;
+  fill: #fff;
+  z-index: 1;
+
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 8px;
+  color: #e8eaed;
+  font-family: Google Sans, Arial, sans-serif;
+  font-optical-sizing: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 15px;
+}
+
+.input {
+  border: 1px solid transparent;
+  border-radius: 26px;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  max-width: 688px;
+  padding-top: 6px;
+  position: relative;
+
+  height: 50px;
+  width: 80%;
+  background: #4d5156;
+
+  padding: 6px;
+  box-shadow: none;
+  /*margin: 0 auto;*/
+  border: 2px solid white;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: e8e8e8;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 15px;
+  padding: 5px;
+  height: 60px;
+  gap: 16px;
+  border: 2px solid red;
+}
+
+li {
+  font-size: 14px;
+  border: 2px solid green;
+}
+
+hr {
+  color: #2d2e2e;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border: 2px solid green;
+  background: #171717;
+}
+
+/*
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 400px;
+  background: #202124;
+  color: #e8e8e8;
+  font-size: 14px;
+
+  border: 2px solid orange;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border: 2px solid green;
+}
+
+.footer {
+  background: #171717;
+}
+
+.header.left-links{
+
+}
+
+.header.right-links
+
+
+img.googlesearch {
+  width: 272px;
+  height: 92px;
+  margin-top: 25px;
+}
+
+img.googleapps {
+  width: 24px;
+  height: 24px;
+  border: none;
+  fill: #fff;
+  z-index: 1;
+
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 8px;
+  color: #e8eaed;
+  font-family: Google Sans, Arial, sans-serif;
+  font-optical-sizing: none;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button {
+  font-family: Roboto, sans-serif;
+  border: none;
+  border-radius: 8px;
+  background: #eee;
+  padding: 15px;
+}
+
+.input {
+  border: 1px solid transparent;
+  border-radius: 26px;
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  max-width: 688px;
+  padding-top: 6px;
+  position: relative;
+
+  height: 50px;
+  width: 80%;
+  background: #4d5156;
+
+  padding: 6px;
+  box-shadow: none;
+
+  border: 2px solid white;
+}
+
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: e8e8e8;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+ul {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 15px;
+  padding: 5px;
+  height: 60px;
+  gap: 16px;
+  border: 2px solid red;
+}
+
+li {
+  font-size: 14px;
+  border: 2px solid green;
+}
+
+hr {
+  color: #2d2e2e;
+}
+
+*/

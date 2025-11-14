@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #202124;
+        color: #e8e8e8;
+      }
+
+      .header {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 30px;
+      }
+
+      .header-links {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .header-links a {
+        color: #e8e8e8;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      .header-links a:hover {
+        text-decoration: underline;
+      }
+
+      .apps-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .apps-icon:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .user-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #8ab4f8;
+        color: #202124;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        padding: 20px;
+      }
+
+      .logo {
+        margin-bottom: 30px;
+      }
+
+      .logo h1 {
+        font-size: 90px;
+        font-weight: normal;
+        color: #fff;
+      }
+
+      .search-box {
+        width: 100%;
+        max-width: 584px;
+        margin-bottom: 30px;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+        background-color: #202124;
+        border: 1px solid #5f6368;
+        border-radius: 24px;
+        padding: 0 15px;
+        height: 44px;
+        margin-bottom: 30px;
+      }
+
+      .search-container:hover {
+        background-color: #303134;
+        box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+        border-color: rgba(223, 225, 229, 0);
+      }
+
+      .search-icon {
+        color: #9aa0a6;
+        margin-right: 13px;
+      }
+
+      .search-input {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        color: #e8e8e8;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .search-tools {
+        display: flex;
+        gap: 15px;
+      }
+
+      .search-tool {
+        color: #9aa0a6;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      .search-tool:hover {
+        color: #e8e8e8;
+      }
+
+      .search-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .search-btn {
+        background-color: #303134;
+        border: 1px solid #303134;
+        border-radius: 4px;
+        color: #e8eaed;
+        font-size: 14px;
+        padding: 10px 16px;
+        cursor: pointer;
+      }
+
+      .search-btn:hover {
+        border: 1px solid #5f6368;
+      }
+
+      .language-offer {
+        margin-top: 30px;
+        font-size: 13px;
+        color: #bdc1c6;
+      }
+
+      .language-offer a {
+        color: #8ab4f8;
+        text-decoration: none;
+      }
+
+      .language-offer a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        background-color: #171717;
+        color: #9aa0a6;
+        padding: 15px 0;
+      }
+
+      .location {
+        padding: 15px 30px;
+        border-bottom: 1px solid #3c4043;
+        font-size: 15px;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        flex-wrap: wrap;
+      }
+
+      .footer-links ul {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+        padding: 15px 0;
+      }
+
+      .footer-links a {
+        color: #9aa0a6;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .footer-links a:hover {
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .footer-links {
+          justify-content: center;
+        }
+
+        .footer-links ul {
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-links">
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+        <div class="apps-icon">
+          <i class="fas fa-th"></i>
+        </div>
+        <div class="user-icon">A</div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="logo">
+        <h1>Google</h1>
+      </div>
+
+      <div class="search-box">
+        <div class="search-container">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <input type="text" class="search-input" />
+          <div class="search-tools">
+            <div class="search-tool" title="Search by voice">
+              <i class="fas fa-microphone"></i>
+            </div>
+            <div class="search-tool" title="Search by image">
+              <i class="fas fa-camera"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-buttons">
+          <button class="search-btn">Google Search</button>
+          <button class="search-btn">I'm Feeling Lucky</button>
+        </div>
+      </div>
+
+      <div class="language-offer">
+        Google offered in:
+        <a href="#">简体中文</a>
+        <a href="#">Bahasa Melayu</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="location">Singapore</div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Advertising</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">How Search works</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // Add functionality for the microphone and camera icons
+      document.addEventListener("DOMContentLoaded", function () {
+        const microphone = document.querySelector(".fa-microphone");
+        const camera = document.querySelector(".fa-camera");
+
+        microphone.addEventListener("click", function () {
+          alert("Voice search activated. Please speak now.");
+        });
+
+        camera.addEventListener("click", function () {
+          alert("Image search activated. Please upload an image.");
+        });
+      });
+    </script>
+  </body>
+</html>
